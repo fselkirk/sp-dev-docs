@@ -59,12 +59,10 @@ By default, "classic" SharePoint sites use modern pages for any newly added page
 
 ## Using modern experiences in the root site collection of a tenant
 
-Root site collection of Office 365 tenant is always using classic team site template and it's not supported to recreate this site collection using user interface, PowerShell or APIs. You can however start utilizing modern experiences on this root site by creating content using modern pages.
-
-It is also supported and possible programmatically enable home page layout in the root site collection. This will provide flexibility for the welcome page designs for this site.
+Prior to April 2019, the root site collection of an Office 365 tenant always used a classic team site template. It's not supported to recreate this site collection using user interface, PowerShell or APIs. However, there are several ways to modernize it. See https://learn.microsoft.com/en-us/SharePoint/modern-root-site for full details.
 
 > [!CAUTION]
-> It is not supported to delete or replace existing site collection from the root URL of your tenant. You should not in any circumstances delete the root site collection. Technically this can be performed using APIs, but that can cause the tenant to move into inconsistent status.
+> It is not supported to delete the existing site collection from the root URL of your tenant, or to replace it by any methods other than those described in https://learn.microsoft.com/en-us/SharePoint/modern-root-site. You should not in any circumstances delete the root site collection. Technically this can be performed using APIs, but that can cause the tenant to move into inconsistent status.
 
 ### Enable home layout in collaboration site
 
